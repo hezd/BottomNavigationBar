@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ec623e</color><!--顶部导航栏-->
+    <color name="colorPrimaryDark">#ec623e</color><!--状态栏-->
+    <color name="colorAccent">#FFFFFF</color><!--背景色-->
+    <color name="orange">#ec623e</color>
+    <color name="orange_aa">#aaec623e</color>
+    <color name="divider">#f5f5f5</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_aa">#aaFFFFFF</color>
+    <color name="font_gray">#333333</color>
+    <color name="font_gray3">#666666</color>
+    <color name="font_gray2">#999999</color>
+    <color name="color_search_layout">#99ffffff</color>
+    <color name="color_blue">#006BFC</color>
+    <color name="color_app_gray">#999999</color>
+    <color name="color_app_blac">#333333</color>
+    <color name="color_app_divider">#cccccc</color>
+    <color name="color_app_bg">#F5F5F5</color>
+    <color name="color_app_red">#FF0000</color>
+</resources>
