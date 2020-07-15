@@ -1,5 +1,6 @@
 # BottomNavigationBar
 底部导航，带有大按钮的样式。
+已添加androidx支持
 
 预览图:
 
