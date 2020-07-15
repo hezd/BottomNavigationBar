@@ -2,6 +2,8 @@
 底部导航，带有大按钮的样式。
 已添加androidx支持
 
+另外用lottie实现带动画效果的底部导航栏课参考https://github.com/dreamkid/LottieNavigationBar
+
 预览图:
 
 <p align="center">
