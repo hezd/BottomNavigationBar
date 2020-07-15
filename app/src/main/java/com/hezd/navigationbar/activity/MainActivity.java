@@ -1,11 +1,11 @@
 package com.hezd.navigationbar.activity;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentTransaction;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.hezd.navigationbar.R;
 import com.hezd.navigationbar.fragment.MainFragment;
@@ -14,29 +14,28 @@ import com.hezd.navigationbar.fragment.MineFragment;
 import com.hezd.navigationbar.fragment.ShopFragment;
 import com.hezd.navigationbar.views.BottomNavigationBar;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
 
 /**
  * 首页
  */
 public class MainActivity extends FragmentActivity implements BottomNavigationBar.OnNavigationBarClickListener {
-    @BindView(R.id.navigationBar)
     BottomNavigationBar mNavigationBar;
     MainFragment mainFragment;
     ShopFragment shopFragment;
     MessageFragment messageFragment;
     MineFragment mineFragment;
-    private Unbinder unbinder;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        unbinder = ButterKnife.bind(this);
+        initViews();
         setListeners();
         init();
+    }
+
+    private void initViews() {
+        mNavigationBar = findViewById(R.id.navigationBar);
     }
 
     private void init() {
@@ -112,9 +111,4 @@ public class MainActivity extends FragmentActivity implements BottomNavigationBa
         }
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
-    }
 }

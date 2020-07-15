@@ -66,6 +66,7 @@ public class BottomNavigationBar extends LinearLayout implements IViews, View.On
                 int height = mMessageBtn.getHeight();
                 layoutParams.leftMargin = mMessageBtn.getRight()-width/2+ DensityUtil.dip2px(getContext(),5);
                 layoutParams.topMargin = mMessageBtn.getTop()-height/2+height/7;
+                mMessageCountTv.setLayoutParams(layoutParams);
             }
 
         });

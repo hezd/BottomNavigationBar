@@ -2,24 +2,19 @@ package com.hezd.navigationbar.fragment;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
-
 public abstract class BaseFragment extends Fragment {
-    protected Unbinder unbinder;
     protected Activity mActivity;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mActivity = getActivity();
         View view = inflater.inflate(getLayoutId(), container, false);
-        unbinder = ButterKnife.bind(this, view);
         return view;
     }
 
@@ -39,9 +34,6 @@ public abstract class BaseFragment extends Fragment {
     }
     @Override
     public void onDestroyView() {
-        if(unbinder != null){
-            unbinder.unbind();
-        }
         super.onDestroyView();
     }
 }

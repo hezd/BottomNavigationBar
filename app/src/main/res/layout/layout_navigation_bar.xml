@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/transparent">
 
     <LinearLayout
@@ -30,6 +31,7 @@
             android:textSize="12sp" />
 
         <TextView
+            android:textColor="@android:color/black"
             android:id="@+id/tv_shop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,6 +51,7 @@
             android:drawableTop="@mipmap/icon_publish"
             android:gravity="center"
             android:text="发布"
+            android:textColor="@android:color/black"
             android:textSize="12sp" />
         <TextView
             android:layout_weight="1"
@@ -59,6 +62,7 @@
             android:drawableTop="@mipmap/icon_message_unselected"
             android:gravity="center"
             android:text="消息"
+            android:textColor="@android:color/black"
             android:textSize="12sp" />
 
 
@@ -73,11 +77,14 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="我的"
+            android:textColor="@android:color/black"
             android:textSize="12sp" />
     </LinearLayout>
+
     <TextView
+        tools:visibility="visible"
+        android:visibility="visible"
         android:id="@+id/tv_message_count"
-        android:layout_marginLeft="263dp"
         android:gravity="center"
         android:layout_marginTop="82dp"
         android:layout_alignTop="@id/ll_navigation"
